@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-fashion.jpg";
 import { useNavigate } from "react-router-dom";
-
+import WhatsAppButton from '@/components/WhatsAppButton';
 const FashionHero = () => {
   const navigate = useNavigate();
   return (
@@ -37,18 +37,15 @@ const FashionHero = () => {
           >
             Visit Store for Customization
           </Button>
+          <WhatsAppButton 
+              size="lg" 
+              variant="outline" 
+              className="border-2 border-white text-white hover:bg-white hover:text-green-600 shadow-2xl transform hover:scale-105 transition-all duration-300"
+              message="Hello! I'm interested in your luxury collections. Could you help me find the perfect piece for my special occasion?"
+            />
         </div>
         
-        <div className="mt-12 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <p className="text-sm uppercase tracking-wider opacity-70 mb-2">Trusted by Fashion Lovers Globally</p>
-          <div className="flex justify-center space-x-8 text-luxury-gold">
-            <span>🇺🇸 USA</span>
-            <span>🇬🇧 UK</span>
-            <span>🇨🇦 Canada</span>
-            <span>🇦🇺 Australia</span>
-            <span>🇦🇪 UAE</span>
-          </div>
-        </div>
+      
       </div>
     </section>
   );
