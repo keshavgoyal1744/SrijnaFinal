@@ -8,6 +8,7 @@ import { AuthProvider } from '@/contexts/AuthContext';
 import Index from './pages/Index';
 import Collections from './pages/Collections';
 import ProductDetail from './pages/ProductDetail';
+import DesignerConsult from './pages/DesignerConsult';
 import Lookbook from './pages/Lookbook';
 import About from './pages/About';
 import Journal from './pages/Journal';
@@ -32,6 +33,7 @@ const App = () => (
                 <Route path="/collections" element={<Collections />} />
                 <Route path="/collections/:category" element={<Collections />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path="/designer-consult" element={<DesignerConsult />} />
                 <Route path="/lookbook" element={<Lookbook />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/journal" element={<Journal />} />

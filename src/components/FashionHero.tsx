@@ -27,7 +27,7 @@ const FashionHero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <Button variant="hero" size="lg" onClick={() => navigate('/products')}>
+          <Button variant="hero" size="lg" onClick={() => navigate('/Collections')}>
             Explore Collections
           </Button>
           <Button 

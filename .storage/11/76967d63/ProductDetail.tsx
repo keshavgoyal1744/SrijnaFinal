@@ -9,9 +9,6 @@ import { Badge } from '@/components/ui/badge';
 import Layout from '@/components/Layout';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { products } from '@/data/products';
-import { useCart } from '@/contexts/CartContext';
-import { useFavorites } from '@/contexts/FavoritesContext';
-import { useAuth } from '@/contexts/AuthContext';
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -20,10 +17,6 @@ export default function ProductDetail() {
   const [selectedSize, setSelectedSize] = useState('');
   const [selectedColor, setSelectedColor] = useState('');
   const [quantity, setQuantity] = useState(1);
-
-  const { addItem } = useCart();
-  const { addFavorite, removeFavorite, isFavorite } = useFavorites();
-  const { showAuthModal } = useAuth();
 
   if (!product) {
     return (
@@ -43,56 +36,6 @@ export default function ProductDetail() {
     .slice(0, 4);
 
   const whatsappMessage = `Hi! I'm interested in the ${product.title} (₹${product.price.toLocaleString()}). Could you provide more details about availability, sizing, and delivery options?`;
-
-  const handleAddToCart = () => {
-    if (!selectedSize && product.sizes.length > 0) {
-      alert('Please select a size');
-      return;
-    }
-    if (!selectedColor && product.colors.length > 1) {
-      alert('Please select a color');
-      return;
-    }
-
-    addItem({
-      id: product.id,
-      title: product.title,
-      price: product.price,
-      image: product.images[0],
-      size: selectedSize,
-      color: selectedColor || product.colors[0],
-      category: product.category,
-      quantity
-    });
-  };
-
-  const handleToggleFavorite = () => {
-    if (isFavorite(product.id)) {
-      removeFavorite(product.id);
-    } else {
-      addFavorite({
-        id: product.id,
-        title: product.title,
-        price: product.price,
-        image: product.images[0],
-        category: product.category,
-        subcategory: product.subcategory
-      });
-    }
-  };
-
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator.share({
-        title: product.title,
-        text: product.description,
-        url: window.location.href,
-      });
-    } else {
-      navigator.clipboard.writeText(window.location.href);
-      alert('Link copied to clipboard!');
-    }
-  };
 
   return (
     <Layout>
@@ -228,9 +171,8 @@ export default function ProductDetail() {
             <div className="space-y-4">
               <Button 
                 size="lg" 
-                className="w-full bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700"
+                className="w-full"
                 disabled={!product.inStock}
-                onClick={handleAddToCart}
               >
                 {product.inStock ? 'Add to Cart' : 'Out of Stock'}
               </Button>
@@ -243,16 +185,11 @@ export default function ProductDetail() {
               />
 
               <div className="flex gap-4">
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
-                  className="flex-1"
-                  onClick={handleToggleFavorite}
-                >
-                  <Heart className={`w-4 h-4 mr-2 ${isFavorite(product.id) ? 'fill-red-500 text-red-500' : ''}`} />
-                  {isFavorite(product.id) ? 'Remove from Wishlist' : 'Add to Wishlist'}
+                <Button variant="ghost" size="sm" className="flex-1">
+                  <Heart className="w-4 h-4 mr-2" />
+                  Add to Wishlist
                 </Button>
-                <Button variant="ghost" size="sm" className="flex-1" onClick={handleShare}>
+                <Button variant="ghost" size="sm" className="flex-1">
                   <Share2 className="w-4 h-4 mr-2" />
                   Share
                 </Button>
