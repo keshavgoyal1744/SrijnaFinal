@@ -121,7 +121,7 @@ export default function Contact() {
                   <Button 
                     variant="outline" 
                     className="w-full border-rose-500 text-rose-600 hover:bg-rose-50"
-                    onClick={() => window.location.href = 'tel:+919876543210'}
+                    onClick={() => window.location.href = 'tel:+919815660666'}
                   >
                     <Phone className="w-4 h-4 mr-2" />
                     Call Now

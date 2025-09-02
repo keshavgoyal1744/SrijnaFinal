@@ -14,7 +14,7 @@ export default function WhatsAppButton({
   variant = "default",
   size = "md"
 }: WhatsAppButtonProps) {
-  const phoneNumber = "919876543210"; // Replace with actual WhatsApp Business number
+  const phoneNumber = "919815660666"; // Replace with actual WhatsApp Business number
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
