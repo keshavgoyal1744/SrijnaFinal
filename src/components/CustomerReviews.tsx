@@ -6,38 +6,208 @@ import { Star, Quote } from "lucide-react";
 const reviews = [
   {
     id: 1,
-    name: "Priya Sharma",
-    location: "Mumbai, India",
+    name: "Neha Kapoor",
+    location: "Chandigarh, India",
     rating: 5,
-    review: "Absolutely stunning saree! The quality of silk and the intricate zari work exceeded my expectations. Perfect for my sister's wedding.",
-    product: "Royal Silk Saree",
+    review: "The pure georgette saree I ordered was breathtaking! The embroidery was flawless, and the sizing was absolutely perfect. Arrived earlier than expected.",
+    product: "Embroidered Georgette Saree",
     image: "/placeholder.svg",
     verified: true
   },
   {
     id: 2,
-    name: "Sarah Johnson", 
-    location: "London, UK",
+    name: "Rajesh Verma",
+    location: "Chandigarh, India",
     rating: 5,
-    review: "Amazing craftsmanship! I ordered a custom lehenga and it was delivered exactly as I envisioned. The international shipping was smooth.",
-    product: "Custom Bridal Lehenga",
+    review: "My custom kurta-pajama set was stitched to perfection. Excellent handwork and a great variety of color choices. Definitely ordering again.",
+    product: "Custom Kurta-Pajama",
     image: "/placeholder.svg",
     verified: true
   },
   {
     id: 3,
-    name: "Meera Patel",
-    location: "Toronto, Canada", 
-    rating: 4,
-    review: "Beautiful anarkali suit with excellent mirror work. The fit was perfect and I received so many compliments at the function.",
-    product: "Designer Anarkali",
+    name: "Aarti Mehra",
+    location: "Ludhiana, India",
+    rating: 5,
+    review: "The silk saree I received was of unmatched quality! The zari detailing was exquisite and the fit was spot on. Excellent customer service.",
+    product: "Zari Silk Saree",
     image: "/placeholder.svg",
     verified: true
   },
   {
     id: 4,
+    name: "Pooja Sethi",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "I ordered a hand-block printed kurti and it was perfect. Vibrant colors, premium fabric, and it arrived just in time for my event.",
+    product: "Hand-Block Printed Kurti",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 5,
+    name: "Manish Sharma",
+    location: "Gurgaon, India",
+    rating: 5,
+    review: "Outstanding tailoring on my sherwani! The handwork was rich and intricate, and the fitting could not have been better.",
+    product: "Wedding Sherwani",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 6,
+    name: "Sneha Rani",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "My lehenga was beyond expectations! Beautiful beadwork and the fabric felt truly luxurious. They even expedited my order without extra charge.",
+    product: "Designer Bridal Lehenga",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 7,
+    name: "Deepak Yadav",
+    location: "Ludhiana, India",
+    rating: 4,
+    review: "Really impressed with my kurta-pajama purchase. The stitching is neat, the fabric feels premium, and I loved the customization options.",
+    product: "Premium Kurta-Pajama",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 8,
+    name: "Anjali Nair",
+    location: "Bangalore, India",
+    rating: 5,
+    review: "The cotton suit set I ordered was both elegant and comfortable. High-quality fabric and perfect measurements. Highly recommended!",
+    product: "Cotton Suit Set",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 9,
+    name: "Vikram Singh",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "Fantastic work on my hand-embroidered kurta. The colors were rich and the fitting was exactly as I specified.",
+    product: "Hand-Embroidered Kurta",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 10,
+    name: "Kiran Bhatia",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "Beautiful phulkari dupatta! The craftsmanship is unmatched and the colors are so vibrant. Arrived neatly packed and on time.",
+    product: "Phulkari Dupatta",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 11,
+    name: "Rohit Malhotra",
+    location: "Gurgaon, India",
+    rating: 4,
+    review: "Very happy with my kurta-pajama. The linen fabric is premium quality and the fit was exactly as per my measurements.",
+    product: "Linen Kurta-Pajama",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 12,
+    name: "Simran Kaur",
+    location: "Ludhiana, India",
+    rating: 5,
+    review: "My patiala suit was stitched perfectly and the dupatta embroidery was gorgeous. The team was very helpful in finalizing the design.",
+    product: "Patiala Suit",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 13,
+    name: "Priyanka Joshi",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "Excellent service! My organza saree fit like a glove and the fabric quality was top-notch. Definitely ordering more.",
+    product: "Organza Saree",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 14,
+    name: "Siddharth Jain",
+    location: "Mumbai, India",
+    rating: 5,
+    review: "Great quality and finish on my kurta-pajama set. Loved the detailing on the cuffs and the variety of fabrics available.",
+    product: "Embroidered Kurta-Pajama",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 15,
+    name: "Ritu Malani",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "Absolutely loved my chiffon saree. The drape is beautiful and the embroidery work is intricate and neat.",
+    product: "Chiffon Saree",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 16,
+    name: "Ankita Desai",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "The silk salwar kameez I ordered was delivered earlier than expected. The fit and fabric quality are both exceptional.",
+    product: "Silk Salwar Kameez",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 17,
+    name: "Aman Kapoor",
+    location: "Rajasthan, India",
+    rating: 5,
+    review: "Perfect fit on my tailored kurta. The threadwork was clean and elegant, and they offered plenty of customization options.",
+    product: "Tailored Kurta",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 18,
+    name: "Shreya Iyer",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "My kanjeevaram saree is stunning! The zari is authentic and the fall of the saree is perfect. Customer support was amazing.",
+    product: "Kanjeevaram Saree",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 19,
+    name: "Harsh Mehta",
+    location: "Chandigarh, India",
+    rating: 4,
+    review: "Loved the fabric and finishing on my pathani kurta. The delivery was quick and the color selection was great.",
+    product: "Pathani Kurta",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 20,
+    name: "Megha Choudhary",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "I ordered an urgent lehenga and they processed it in record time without compromising quality. The beadwork is fabulous.",
+    product: "Urgent Bridal Lehenga",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 21,
     name: "Anita Singh",
-    location: "Delhi, India",
+    location: "Chandigarh, India",
     rating: 5,
     review: "Outstanding quality and design! The kurta set was comfortable and elegant. Will definitely order again for my next occasion.",
     product: "Cotton Kurta Set",
@@ -45,9 +215,9 @@ const reviews = [
     verified: true
   },
   {
-    id: 5,
-    name: "Emma Wilson",
-    location: "Sydney, Australia",
+    id: 22,
+    name: "Roshni Bhatia",
+    location: "New Zealand",
     rating: 5,
     review: "Incredible fusion gown! The sequin work was breathtaking and it fit like a dream. Perfect for our cultural event.",
     product: "Indo-Western Gown",
@@ -55,16 +225,47 @@ const reviews = [
     verified: true
   },
   {
-    id: 6,
+    id: 23,
     name: "Kavitha Reddy",
-    location: "Hyderabad, India",
+    location: "Bangalore, India",
     rating: 4,
     review: "Lovely kurti with beautiful block prints. The fabric quality is excellent and the colors are vibrant. Highly recommended!",
     product: "Designer Kurti",
     image: "/placeholder.svg",
     verified: true
+  },
+  {
+    id: 24,
+    name: "Ananya Sharma", 
+    location: "USA",
+    rating: 5,
+    review: "Amazing craftsmanship! I ordered a custom lehenga and it was delivered exactly as I envisioned. The international shipping was smooth.",
+    product: "Custom Bridal Lehenga",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 25,
+    name: "Meera Patel",
+    location: "USA", 
+    rating: 4,
+    review: "Beautiful anarkali suit with excellent mirror work. The fit was perfect and I received so many compliments at the function.",
+    product: "Designer Anarkali",
+    image: "/placeholder.svg",
+    verified: true
+  },
+  {
+    id: 26,
+    name: "Priya Sharma",
+    location: "Chandigarh, India",
+    rating: 5,
+    review: "Absolutely stunning saree! The quality of silk and the intricate zari work exceeded my expectations. Perfect for my sister's wedding.",
+    product: "Royal Silk Saree",
+    image: "/placeholder.svg",
+    verified: true
   }
 ];
+
 
 const CustomerReviews = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -117,7 +318,7 @@ const CustomerReviews = () => {
           <div 
             className="flex transition-transform duration-1000 ease-in-out gap-6"
             style={{ 
-              transform: `translateX(-${(currentIndex * 100) / 3}%)`,
+              transform: `translateX(-${(currentIndex * 10) / 3}%)`,
               width: `${(reviews.length * 100) / 3}%`
             }}
           >
@@ -173,15 +374,15 @@ const CustomerReviews = () => {
 
         {/* Indicators */}
         <div className="flex justify-center mt-8 gap-2">
-          {reviews.map((_, index) => (
+          {Array.from({ length: Math.ceil(reviews.length / 3) }).map((_, page) => (
             <button
-              key={index}
+              key={page}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentIndex 
-                  ? 'bg-luxury-gold scale-125' 
+                Math.floor(currentIndex / 3) === page
+                  ? 'bg-luxury-gold scale-125'
                   : 'bg-luxury-charcoal/30 hover:bg-luxury-charcoal/50'
               }`}
-              onClick={() => setCurrentIndex(index)}
+              onClick={() => setCurrentIndex(page * 3)}
             />
           ))}
         </div>
@@ -189,15 +390,15 @@ const CustomerReviews = () => {
         {/* Trust Indicators */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
-            <div className="text-3xl font-bold text-luxury-deep mb-2">5000+</div>
+            <div className="text-3xl font-bold text-luxury-deep mb-2">300+</div>
             <div className="text-sm text-luxury-charcoal">Happy Customers</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-luxury-deep mb-2">4.9★</div>
+            <div className="text-3xl font-bold text-luxury-deep mb-2">5★</div>
             <div className="text-sm text-luxury-charcoal">Average Rating</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-luxury-deep mb-2">50+</div>
+            <div className="text-3xl font-bold text-luxury-deep mb-2">4+</div>
             <div className="text-sm text-luxury-charcoal">Countries Served</div>
           </div>
           <div>

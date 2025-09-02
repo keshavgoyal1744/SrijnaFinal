@@ -8,9 +8,9 @@ const AboutBrand = () => {
       description: "Crafting beautiful fashion with passion and precision"
     },
     {
-      number: "5000+", 
+      number: "300+", 
       label: "Happy Customers",
-      description: "Across 20+ countries worldwide"
+      description: "Across 4+ countries worldwide"
     },
     {
       number: "∞",
@@ -51,13 +51,7 @@ const AboutBrand = () => {
               </p>
             </div>
             
-            <div className="mt-8 p-6 bg-gradient-rose rounded-2xl">
-              <h3 className="text-xl font-bold text-luxury-deep mb-2">Our Mission</h3>
-              <p className="text-luxury-charcoal">
-                To democratize high-fashion customization and make exceptional, personalized clothing 
-                accessible to fashion lovers worldwide, regardless of location or occasion.
-              </p>
-            </div>
+            {/* ...existing code... */}
           </div>
           
           {/* Achievements Grid */}
@@ -78,13 +72,24 @@ const AboutBrand = () => {
               ))}
             </div>
             
-            <div className="mt-8 bg-gradient-luxury rounded-2xl p-6 text-primary-foreground">
-              <h3 className="text-xl font-bold mb-2">Quality Promise</h3>
-              <p className="opacity-90">
-                Every piece is handcrafted by skilled artisans using premium materials. 
-                We stand behind our work with comprehensive quality assurance and customer satisfaction guarantee.
-              </p>
-            </div>
+            {/* ...existing code... */}
+          </div>
+        </div>
+        {/* Mission & Quality Promise Row */}
+        <div className="mt-12 flex flex-col md:flex-row gap-8 justify-center">
+          <div className="flex-1 p-6 bg-gradient-rose rounded-2xl min-w-[260px]">
+            <h3 className="text-xl font-bold text-luxury-deep mb-2">Our Mission</h3>
+            <p className="text-luxury-charcoal">
+              To democratize high-fashion customization and make exceptional, personalized clothing 
+              accessible to fashion lovers worldwide, regardless of location or occasion.
+            </p>
+          </div>
+          <div className="flex-1 p-6 bg-gradient-luxury rounded-2xl min-w-[260px] text-primary-foreground">
+            <h3 className="text-xl font-bold mb-2">Quality Promise</h3>
+            <p className="opacity-90">
+              Every piece is handcrafted by skilled artisans using premium materials. 
+              We stand behind our work with comprehensive quality assurance and customer satisfaction guarantee.
+            </p>
           </div>
         </div>
       </div>
