@@ -127,7 +127,10 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-hover': 'scale-hover 0.3s ease-out'
-			}
+			},
+			fontFamily: {
+				samarkan: ['Samarkan', 'sans-serif'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

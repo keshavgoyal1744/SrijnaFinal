@@ -16,9 +16,11 @@ const FashionHero = () => {
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-primary-foreground">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          Srijna By Ritu Ritesh
+        <h1 className="mb-6 animate-fade-in flex flex-col items-center">
+          <span className="font-samarkan text-5xl md:text-7xl">Srijna</span>
+          <span className="font-serif text-xl md:text-3xl mt-2">By Ritu Ritesh</span>
         </h1>
+        
         <p className="text-xl md:text-2xl mb-4 opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           Timeless Indian, Western & Indo-Western Apparel
         </p>
@@ -30,11 +32,7 @@ const FashionHero = () => {
           <Button variant="hero" size="lg" onClick={() => navigate('/Collections')}>
             Explore Collections
           </Button>
-          <Button 
-            variant="gold" 
-            size="lg"
-            onClick={() => window.open('https://maps.google.com', '_blank')}
-          >
+          <Button variant="gold" size="lg" onClick={() => window.open('https://maps.app.goo.gl/pMgoBvzUV1QBPE8XA', '_blank')}>
             Visit Store for Customization
           </Button>
           <WhatsAppButton 
