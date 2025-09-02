@@ -17,7 +17,7 @@ import DesignerConsult from './pages/DesignerConsult';
 import AuthModal from './components/AuthModal';
 import CartSidebar from './components/CartSidebar';
 import FavoritesSidebar from './components/FavoritesSidebar';
-
+import { Analytics } from '@vercel/analytics/react';
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -48,6 +48,7 @@ const App = () => (
         </CartProvider>
       </AuthProvider>
     </TooltipProvider>
+    <Analytics />
   </QueryClientProvider>
 );
 
