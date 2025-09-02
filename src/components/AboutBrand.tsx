@@ -8,9 +8,9 @@ const AboutBrand = () => {
       description: "Crafting beautiful fashion with passion and precision"
     },
     {
-      number: "5000+", 
+      number: "300+", 
       label: "Happy Customers",
-      description: "Across 20+ countries worldwide"
+      description: "Across 4+ countries worldwide"
     },
     {
       number: "∞",

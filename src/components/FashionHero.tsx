@@ -42,8 +42,6 @@ const FashionHero = () => {
               message="Hello! I'm interested in your luxury collections. Could you help me find the perfect piece for my special occasion?"
             />
         </div>
-        
-      
       </div>
     </section>
   );
