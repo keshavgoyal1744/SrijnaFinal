@@ -13,10 +13,11 @@ import About from './pages/About';
 import Journal from './pages/Journal';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import DesignerConsult from './pages/DesignerConsult';
 import AuthModal from './components/AuthModal';
 import CartSidebar from './components/CartSidebar';
 import FavoritesSidebar from './components/FavoritesSidebar';
-
+import { Analytics } from '@vercel/analytics/react';
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -32,6 +33,7 @@ const App = () => (
                 <Route path="/collections" element={<Collections />} />
                 <Route path="/collections/:category" element={<Collections />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path="/designer-consult" element={<DesignerConsult />} />
                 <Route path="/lookbook" element={<Lookbook />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/journal" element={<Journal />} />
@@ -46,6 +48,7 @@ const App = () => (
         </CartProvider>
       </AuthProvider>
     </TooltipProvider>
+    <Analytics />
   </QueryClientProvider>
 );
 
