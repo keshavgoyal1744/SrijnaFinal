@@ -15,7 +15,7 @@ export default function CartSidebar() {
     
     const message = `Hi! I'd like to proceed with checkout for the following items:\n\n${itemsList}\n\nTotal: ₹${state.total.toLocaleString()}\n\nCould you please help me complete the purchase?`;
     
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919815660666?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
