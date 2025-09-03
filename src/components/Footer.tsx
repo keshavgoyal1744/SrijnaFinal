@@ -66,15 +66,15 @@ const Footer = () => {
             <div className="space-y-2 text-sm">
               <p className="flex items-center gap-2">
                 <span>📍</span>
-                <span>Boutique Studio, Fashion District</span>
+                <span>Srijna By Ritu Ritesh, Panchkula, Haryana, India, 134112</span>
               </p>
               <p className="flex items-center gap-2">
                 <span>📞</span>
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9815660666</span>
               </p>
               <p className="flex items-center gap-2">
                 <span>✉️</span>
-                <span>hello@srijnabyritiritesh.com</span>
+                <span>ritugoyal1744@gmail.com</span>
               </p>
             </div>
           </div>

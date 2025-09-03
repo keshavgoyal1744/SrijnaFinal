@@ -57,9 +57,9 @@ const ContactSection = () => {
                       size="sm"
                       onClick={() => {
                         if (method.title.includes('WhatsApp')) {
-                          window.open('https://wa.me/1234567890', '_blank');
+                          window.open('https://wa.me/919815660666', '_blank');
                         } else if (method.title.includes('Email')) {
-                          window.open('mailto:hello@srijnabyritiritesh.com', '_blank');
+                          window.open('mailto:rituritesh1744@gmail.com', '_blank');
                         } else {
                           window.open('https://calendly.com', '_blank');
                         }
